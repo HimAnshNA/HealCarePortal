@@ -1,4 +1,4 @@
-# 🏥 HealCare Portal — MERN Hospital Appointment System
+#  HealCare Portal — MERN Hospital Appointment System
 
 A complete **Hospital Appointment Management System** built using the **MERN Stack** (MongoDB, Express, React, Node.js) with modern UI powered by **Tailwind CSS**.
 
