@@ -159,8 +159,8 @@ export default function Landing() {
               Node) with Tailwind CSS.
             </p>
             <p className="text-slate-400">
-              Use it to showcase full-stack skills: auth, role-based dashboards,
-              live booking flow & clean UI.
+              Using it to showcase my full-stack skills: auth, role-based dashboards,
+              live booking flow, CRUD & clean UI.
             </p>
           </div>
         </div>
