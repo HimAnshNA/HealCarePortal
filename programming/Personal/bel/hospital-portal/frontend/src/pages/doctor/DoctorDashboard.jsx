@@ -52,7 +52,7 @@ export default function DoctorDashboard() {
 
       setLoadingAvailability(true);
       const res = await axios.get(
-        `http://localhost:5000/api/availability/${id}`
+        `https://healcareportal.onrender.com/api/availability/${id}`
       );
       setAvailability(res.data || []);
     } catch (err) {
@@ -69,7 +69,7 @@ export default function DoctorDashboard() {
 
       setLoadingAppointments(true);
       const res = await axios.get(
-        `http://localhost:5000/api/appointments/doctor/${doctor._id}`
+        `https://healcareportal.onrender.com/api/appointments/doctor/${doctor._id}`
       );
       setAppointments(res.data || []);
     } catch (err) {
@@ -116,7 +116,7 @@ export default function DoctorDashboard() {
       };
 
       const res = await axios.post(
-        "http://localhost:5000/api/availability/add",
+        "https://healcareportal.onrender.com/api/availability/add",
         payload
       );
 
@@ -144,7 +144,7 @@ export default function DoctorDashboard() {
 
     try {
       await axios.patch(
-        `http://localhost:5000/api/appointments/${appointmentId}/status`,
+        `https://healcareportal.onrender.com/api/appointments/${appointmentId}/status`,
         { status }
       );
 
