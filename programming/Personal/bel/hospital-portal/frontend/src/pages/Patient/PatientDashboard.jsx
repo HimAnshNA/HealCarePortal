@@ -46,7 +46,7 @@ export default function PatientDashboard() {
   const fetchDoctors = async () => {
     try {
       setLoadingDoctors(true);
-      const res = await axios.get("http://localhost:5000/api/doctors");
+      const res = await axios.get("https://healcareportal.onrender.com/api/doctors");
       setDoctors(res.data || []);
     } catch (err) {
       console.error(err);
@@ -62,7 +62,7 @@ export default function PatientDashboard() {
 
       setLoadingAvailability(true);
       const res = await axios.get(
-        `http://localhost:5000/api/availability/${doctorId}`
+        `https://healcareportal.onrender.com/api/availability/${doctorId}`
       );
       setAvailability(res.data || []);
     } catch (err) {
@@ -79,7 +79,7 @@ export default function PatientDashboard() {
 
       setLoadingAppointments(true);
       const res = await axios.get(
-        `http://localhost:5000/api/appointments/patient/${patient._id}`
+        `https://healcareportal.onrender.com/api/appointments/patient/${patient._id}`
       );
       setAppointments(res.data || []);
     } catch (err) {
@@ -115,7 +115,7 @@ export default function PatientDashboard() {
       };
 
       await axios.post(
-        "http://localhost:5000/api/appointments/book",
+        "https://healcareportal.onrender.com/api/appointments/book",
         payload
       );
 
@@ -142,7 +142,7 @@ export default function PatientDashboard() {
 
     try {
       await axios.patch(
-        `http://localhost:5000/api/appointments/${appointmentId}/status`,
+        `https://healcareportal.onrender.com/api/appointments/${appointmentId}/status`,
         { status: "cancelled" }
       );
 
