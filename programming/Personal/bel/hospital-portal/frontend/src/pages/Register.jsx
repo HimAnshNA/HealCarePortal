@@ -67,7 +67,7 @@ export default function Register() {
           : undefined;
       }
 
-      await axios.post("http://localhost:5000/api/auth/register", payload);
+      await axios.post("https://healcareportal.onrender.com/api/auth/register", payload);
 
       setSuccess("Registration successful! Redirecting to login...");
       setLoading(false);
